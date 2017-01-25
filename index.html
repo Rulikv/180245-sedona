@@ -12,7 +12,7 @@
 				<img src="img/logo.png" width="10" height="10" alt="Логотип города Седоны">
 			</div> 
 			<nav class="navigation">
-				<ul class="navigation">
+				<ul>
 					<li>
 						<a href="#">Информация</a>
 					</li>
@@ -94,18 +94,20 @@
 			<p>Укажите, предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
 			<form action="https://echo.htmlacademy.ru" method="get">
 				<p>Поиск гостиницы в Седоне</p>
-				<label>
-					Дата заезда: <input type="date" name="check-in-date" required autocomplete="on" tabindex="1">
-				</label>
-				<label>	
-					Дата выезда: <input type="date" name="check-out-date" required autocomplete="on" tabindex="2">
-				</label>
-				<label>
-					Взрослые: <input type="number" name="number-adults" autocomplete="on" tabindex="3">
-				</label>
-				<label>
-					Дети: <input type="number" name="number-children" autocomplete="on" tabindex="4">
-				</label>
+				<label for="checkin-date-field">Дата заезда:</label>
+					<input type="date" name="checkin-date" id="checkin-date-field" required autocomplete="on" tabindex="1">
+					<button type="button"><img src="img/calender.png" alt="Календарь"></button>
+				<label for="checkout-date-field">Дата выезда:</label>
+					<input type="date" name="checkout-date" id="checkout-date-field" required autocomplete="on" tabindex="2">
+					<button type="button"><img src="img/calender.png" alt="Календарь"></button>
+				<label for="number-adults-field">Взрослые:</label>
+					<button type="button" name="minus">-</button>
+					<input type="text" name="number-adults" id="number-adults-field" value="2" autocomplete="on" tabindex="3">
+					<button type="button" name="plus">+</button>
+				<label for="number-children-field">Дети:</label>
+					<button type="button" name="minus">-</button>
+					<input type="text" name="number-children" id="number-children-field" value="0" autocomplete="on" tabindex="4">
+					<button type="button" name="plus">+</button>
 				<input class="btn btn-regular" type="submit" value="Найти" tabindex="5">  
 			</form>
 		</section>
@@ -114,18 +116,18 @@
 		</section>
 	</main>
 	<footer class="container">
-		<section class="tag-us">
-			<p>#visitsedona</p>
-		</section>
-		<section class="social">
-			<a class="social-btn twit" href="#">Твиттер</a>
-			<a class="social-btn fb" href="#">Фейсбук</a>
-			<a class="social-btn youtube" href="#">Youtube</a>
-		</section>
-		<section class="developer">
-			<p>Website by
-			<a href="https://htmlacademy.ru"><img src="img/ha-logo.png" width="10" height="10" alt="Логотип компании-разработчика HTML Academy"></a></p>
-		</section>
-	</footer>
+        <div class="tag-us">
+            <a href="#">#visitsedona</a>
+        </div>
+        <div class="social">
+            <a class="social-btn twit" href="#">Твиттер</a>
+            <a class="social-btn fb" href="#">Фейсбук</a>
+            <a class="social-btn youtube" href="#">Youtube</a>
+        </div>
+        <div class="developer">
+            <p>Website by
+            <a href="https://htmlacademy.ru"><img src="img/ha-logo.png" width="10" height="10" alt="Логотип компании-разработчика HTML Academy"></a></p>
+        </div>
+    </footer>
 </body>
 </html>

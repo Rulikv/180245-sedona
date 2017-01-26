@@ -93,22 +93,28 @@
 			<h3>Заинтересовались?</h3>
 			<p>Укажите, предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
 			<form action="https://echo.htmlacademy.ru" method="get">
-				<p>Поиск гостиницы в Седоне</p>
-				<label for="checkin-date-field">Дата заезда:</label>
-					<input type="date" name="checkin-date" id="checkin-date-field" required autocomplete="on" tabindex="1">
-					<button type="button"><img src="img/calender.png" alt="Календарь"></button>
-				<label for="checkout-date-field">Дата выезда:</label>
-					<input type="date" name="checkout-date" id="checkout-date-field" required autocomplete="on" tabindex="2">
-					<button type="button"><img src="img/calender.png" alt="Календарь"></button>
-				<label for="number-adults-field">Взрослые:</label>
-					<button type="button" name="minus">-</button>
-					<input type="text" name="number-adults" id="number-adults-field" value="2" autocomplete="on" tabindex="3">
-					<button type="button" name="plus">+</button>
-				<label for="number-children-field">Дети:</label>
-					<button type="button" name="minus">-</button>
-					<input type="text" name="number-children" id="number-children-field" value="0" autocomplete="on" tabindex="4">
-					<button type="button" name="plus">+</button>
-				<input class="btn btn-regular" type="submit" value="Найти" tabindex="5">  
+				<a href="#">Поиск гостиницы в Седоне</a>
+				<div class="modal">
+					<div class="formgroup">
+						<label for="checkin-date-field">Дата заезда:</label>
+							<input type="date" name="checkin-date" id="checkin-date-field" required autocomplete="on" tabindex="1">
+								<button type="button" title="Выбрать дату">Выбрать дату</button>
+						<label for="checkout-date-field">Дата выезда:</label>
+							<input type="date" name="checkout-date" id="checkout-date-field" required autocomplete="on" tabindex="2">
+								<button type="button" title="Выбрать дату">Выбрать дату</button>
+					</div>
+					<div class="formgroup">
+						<label for="number-adults-field">Взрослые:</label>
+							<button type="button" name="minus">-</button>
+								<input type="text" name="number-adults" id="number-adults-field" value="2" autocomplete="on" tabindex="3">
+							<button type="button" name="plus">+</button>
+						<label for="number-children-field">Дети:</label>
+							<button type="button" name="minus">-</button>
+								<input type="text" name="number-children" id="number-children-field" value="0" autocomplete="on" tabindex="4">
+							<button type="button" name="plus">+</button>
+					</div>
+					<button class="btn btn-regular" type="submit" name="find-hotel" tabindex="5">Найти</button>
+				</div>  
 			</form>
 		</section>
 		<section class="location">

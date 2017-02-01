@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ru">
 <head>
 	<meta charset="utf-8">
-	<title>Sedona</title>
-	<link href="css/style.css" rel="stylesheet">
+	<title>Добро пожаловать в Седону</title>
+	<link href="style.css" rel="stylesheet">
 </head>
 <body>
 	<header>
@@ -28,17 +28,20 @@
 				</ul>
 			</nav>
 			<div class="header-image">
-				<img src="img/sedona-main.jpg" width="1200" height="773" alt="Изображение окрестностей Седоны">
+				<img src="img/sedona-main.jpg" width="1200" height="511" alt="Изображение окрестностей Седоны">
+				<img class="main-title" src="img/slogans.png" width="458" height="352" alt="Добро пожаловать в Седону">
 			</div>
 		</div>			
 	</header>
 	<main class="container">
 		<section class="about">
-			<h1>Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
-			<p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+			<div class="about-item">
+				<h1>Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
+				<p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+			</div>
 		</section>
 		<section class="features">
-			<div class="features-item">
+			<div class="features-item clearfix">
 				<div class="feature-name town">
 					<h3>Настоящий городок</h3>
 					<b>- №1 -</b>
@@ -46,7 +49,7 @@
 				</div>
 				<img class="features-town" src="img/feature-1.jpg" width="800" height="256" alt="Седона">
 			</div>
-			<div class="categories">
+			<div class="categories clearfix">
 				<div class="category accomodation">
 					<img class="icon" src="img/accomodation.png" width="75" height="72" alt="Жилье в Седоне">
 					<h2>Жилье</h2>
@@ -63,15 +66,16 @@
 					<p>Не только китайского, но и местного производства!</p>
 				</div>
 			</div>
-			<div class="features-item">
+			<div class="features-item clearfix">
+				<img class="features-bridge" src="img/feature-2.jpg" width="800" height="256" alt="Мост дьявола">
 				<div class="feature-name bridge">
 					<h3>Там есть Мост дьявола</h3>
 					<b>- №2 -</b>
 					<p>Да, по нему можно пройти! Если, конечно, вы осмелитесь</p>
 				</div>
-				<img class="features-bridge" src="img/feature-2.jpg" width="800" height="256" alt="Мост дьявола">
+				
 			</div>
-			<div class="features-block">
+			<div class="features-block clearfix">
 				<div class="feature-name-small">
 					<h3>Небольшая площадь</h3>
 					<b>- №3 -</b>
@@ -90,10 +94,12 @@
 			</div>
 		</section>
 		<section class="hotel-search">
-			<h3>Заинтересовались?</h3>
-			<p>Укажите, предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+			<div class="hotel-search-title">
+				<h3>Заинтересовались?</h3>
+				<p>Укажите, предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+			</div>
 			<form action="https://echo.htmlacademy.ru" method="get">
-				<a href="#">Поиск гостиницы в Седоне</a>
+				<a class="hotel-search-form" href="#">Поиск гостиницы в Седоне</a>
 				<div class="modal">
 					<div class="formgroup">
 						<label for="checkin-date-field">Дата заезда:</label>
@@ -121,12 +127,12 @@
 			<img src="img/map.jpg" width="1200" height="593" alt="Карта Седоны">
 		</section>
 	</main>
-	<footer class="container">
-        <div class="tag-us">
-            <a href="#">#visitsedona</a>
-        </div>
+	<footer class="container clearfix">
+		<div class="tag-us">
+			<a href="#">#visitsedona</a>
+		</div>
         <div class="social">
-            <a class="social-btn twit" href="#">Твиттер</a>
+			<a class="social-btn twit" href="#">Твиттер</a>
             <a class="social-btn fb" href="#">Фейсбук</a>
             <a class="social-btn youtube" href="#">Youtube</a>
         </div>

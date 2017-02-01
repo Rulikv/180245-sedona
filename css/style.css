@@ -1,3 +1,5 @@
+﻿/*Универсальные стили*/
+
 html,
 body {
 	font-size: 14px;
@@ -5,14 +7,417 @@ body {
 	color: #333333;
 	font-weight: normal;
 	font-family: "PT Sans", "Helvetica", "Arial", sans-serif;
+	
+	background-color: #cccccc;
 }
+
+.clearfix::after {
+  content: "";
+
+  display: table;
+  clear: both;
+}
+
+.container {
+	width: 1200px;
+  	margin: 0 auto;
+	
+  	background-color: #beeb9f;
+  	outline: 1px solid green;
+}
+
+.logo {
+	position: relative;
+	z-index: 1;
+	width: 138px;
+	margin: 0 auto;
+		
+	/*background-color: #fefccf;
+	outline: 1px solid orange;*/
+}
+
+.navigation {
+	width: 1056px;
+	
+	margin-top: -80px;
+	margin-right: 73px;
+	margin-left: 73px;
+	text-align: center;	
+
+	min-height: 56px;
+	background-color: #f4d1d1;
+	outline: 1px solid red;
+}
+
+.navigation li {
+	display: inline-block;
+}
+
+/*Стили index.html*/
+
+.header-image {
+	width: 1200px;
+	margin-top: -25px;
+	
+	min-height: 508px;
+	background-color: #f4d1d1;
+	outline: 1px solid red;
+}
+
+.main-title {
+	display: block;
+	width: 458px;
+	margin: 0 auto;
+	margin-top: -440px;
+}
+
+.about {
+	width: 1200px;
+	padding-top: 48px; /*Некорректное расстояние - проверить (62px)*/
+	padding-bottom: 46px; /*Некорректное расстояние - проверить (55px)*/
+	
+	background-color: #f4d1d1;	
+	outline: 1px solid red;
+}
+
+.about-item {
+	width: 576px;
+	margin: 0 auto;
+
+	background-color: #fefccf;
+	outline: 1px solid orange;
+}
+
+.features-item {
+	width: 1200px;
+	margin: 0 auto;	
+
+	min-height: 256px;
+	background-color: #f4d1d1;	
+	outline: 1px solid red;
+}
+
+.feature-name {
+	width: 400px;
+
+	min-height: 256px;
+	background-color: #fefccf;
+	outline: 1px solid orange;
+}
+
+.town {
+	float: left;
+}
+
+.features-town {
+	float: right;
+	width: 800px;
+
+	min-height: 256px;
+	background-color: #fefccf;
+	outline: 1px solid orange;
+}
+
+.categories {
+	width: 1200px;
+	margin: 0 auto;
+
+	min-height: 330px;
+	background-color: #f4d1d1;
+	outline: 1px solid red;
+}	
+
+.category {
+	float: left;
+	width: 400px;
+
+	min-height: 330px;
+	background-color: #fefccf;
+	outline: 1px solid orange;
+}
+
+.category :last-child {
+	float: right;
+}
+
+.features-bridge {
+	float: left;
+	width: 800px;
+
+	min-height: 256px;
+	background-color: #fefccf;
+	outline: 1px solid orange;
+}
+
+.bridge {
+	float: right;
+}
+
+.features-block {
+	width: 1200px;
+	margin: 0 auto;
+
+	min-height: 256px;
+	background-color: #f4d1d1;
+	outline: 1px solid red;
+}
+
+.feature-name-small {
+	float: left;
+	width: 400px;
+
+	min-height: 256px;
+	background-color: #fefccf;
+	outline: 1px solid orange;
+}
+
+.feature-name-small :last-child {
+	float: right;
+}
+
+.hotel-search {
+	position: relative;
+	width: 1200px;
+	margin: 0 auto;
+	padding-top: 54px;
+
+	background-color: #f4d1d1;
+	outline: 1px solid red;
+}
+
+.hotel-search-title {
+	width: 576px;
+	margin: 0 auto;
+	
+
+	background-color: #fefccf;
+	outline: 1px solid orange;
+}
+
+.hotel-search-form {
+	display: block;
+	width: 568px;
+	margin: 0 auto;
+	margin-top: 50px;
+	margin-bottom: 0;	
+
+	min-height: 86px;
+	background-color: #fefccf;
+	outline: 1px solid orange;
+}
+
+.modal {
+	position: absolute;
+	right: 313px;
+	bottom: -395px;
+	width: 576px;
+	margin: 0 auto;
+			
+	min-height: 395px;
+	background-color: #fefccf;
+	outline: 1px solid orange;
+}
+
+.location { 
+	width: 1200px;
+	margin: 0 auto;
+	margin-bottom: -120px;
+	
+	background-color: #f4d1d1;
+	outline: 1px solid red;
+}
+
+/*Универсальные стили для Footer*/
+
+footer {
+	position: relative;
+	z-index: 1;
+	width: 1200px;
+	margin: 0 auto;
+	
+	min-height: 120px;
+	background-color: #fefccf;
+	outline: 1px solid orange;
+}
+
+.tag-us {
+	float: left;	
+	width: 240px;
+	margin: 10px 88px 10px 73px;
+	
+	min-height: 100px;
+	background-color: #fefccf;
+	outline: 1px solid orange;	
+}
+
+.social {
+	float: left;	
+	width: 400px;
+	margin: 10px 88px 10px 0;
+	
+	min-height: 100px;
+	background-color: #fefccf;
+	outline: 1px solid orange;	
+}
+
+.developer {
+	float: right;	
+	width: 230px;
+	margin: 10px 73px 10px 0;
+	
+	min-height: 100px;
+	background-color: #fefccf;
+	outline: 1px solid orange;	
+}
+
+/*Стили для hotels.html*/
+
+.filter {
+	margin-top: -24px;	
+	background: #2a3e45 url("img/sedona-blur.jpg") no-repeat;
+  	background-size: 1200px auto;
+}
+
+.infrastructure {
+	float: left;
+	width: 240px;
+	margin-left: 72px;
+	
+	min-height: 216px;
+	background-color: #f4d1d1;
+	outline: 1px solid red;
+}
+
+.accomodation-type {
+	float: left;
+	width: 240px;
+	
+	min-height: 216px;
+	background-color: #f4d1d1;
+	outline: 1px solid red;
+}
+
+.accommodation-price {
+	float: right;
+	width: 328px;
+	margin-right: 72px;
+
+	min-height: 216px;
+	background-color: #f4d1d1;
+	outline: 1px solid red;
+}
+
+input[type="checkbox"] {
+	display: block;
+}
+
+.accomodation-found {
+	width: 1056px;
+	margin: 0 auto;
+
+	background-color: #f4d1d1;
+	outline: 1px solid red;
+}
+
+.accomodation-number {
+	float: left;
+	width: 160px;
+
+	min-height: 87px;
+	background-color: #fefccf;
+	outline: 1px solid orange;
+}
+
+.sorting {
+	float: right;
+	width: 895px;
+	
+	min-height: 87px;
+	background-color: #fefccf;
+	outline: 1px solid orange;
+}
+
+.sorting-type {
+	float: left;
+	width: 569px;
+	
+	min-height: 14px;
+	background-color: #b2cad5;
+	outline: 1px solid blue;
+}
+
+.sorting-arrows {
+	float: right;
+	width: 38px;
+	
+
+	background-color: #b2cad5;
+	outline: 1px solid blue;
+}
+
+.sorting-type li {
+	display: inline-block;
+}
+
+.accomodation-block {
+	width: 1056px;
+	margin: 0 auto;
+
+	min-height: 455px;
+	background-color: #f4d1d1;
+	outline: 1px solid red;
+}
+
+.accomodation-item {
+	width: 1056px;
+	padding: 31px 0;
+
+	min-height: 151px;
+	background-color: #fefccf;
+	outline: 1px solid orange;
+}
+
+.accomodation-info {
+	float: left;
+	width: 528px;
+	
+	background-color: #b2cad5;
+	outline: 1px solid blue;
+}
+
+.accomodation-img {
+	float: left;
+	width: 160px;
+
+	background-color: #bbbbbb;
+	outline: 1px solid white;
+}
+
+.accomodation-booking {
+	float: right;
+	width: 360px;
+
+	background-color: #bbbbbb;
+	outline: 1px solid white;
+}
+
+.accomodation-rate {
+	float: right;
+	width: 130px;
+
+	min-height: 91px;
+	background-color: #bbbbbb;
+	outline: 1px solid white;
+}
+
+/*Текстовые стили*/
+
 
 h1 {
 	font-size: 21px;
 	line-height: 26px;
 	color: #000000;
 	font-weight: bold;
-	font-family: "PT Sans", "Helvetica", "Arial", sans-serif;
 }
 
 h2 {
@@ -20,5 +425,5 @@ h2 {
 	line-height: 21px;
 	color: #000000;
 	font-weight: bold;
-	font-family: "PT Sans", "Helvetica", "Arial", sans-serif;
 }
+

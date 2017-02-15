@@ -103,21 +103,23 @@
 				<div class="modal">
 					<div class="formgroup dates">
 						<label for="checkin-date-field">Дата заезда:</label>
-							<input class="checkin-field" type="date" name="checkin-date" id="checkin-date-field" required autocomplete="on" tabindex="1">
+							<input class="checkin-field" type="text" name="checkin-date" id="checkin-date-field" value="24 Апреля 2017" required  autocomplete="on" tabindex="1">
 								<button class="btn-calendar" type="button" title="Выбрать дату">Выбрать дату</button>
 						<label for="checkout-date-field">Дата выезда:</label>
-							<input class="checkout-field" type="date" name="checkout-date" id="checkout-date-field" required autocomplete="on" tabindex="2">
+							<input class="checkout-field" type="text" name="checkout-date" id="checkout-date-field" value="4 июля 2017" required autocomplete="on" tabindex="2">
 								<button class="btn-calendar" type="button" title="Выбрать дату"></button>
 					</div>
 					<div class="formgroup guests">
-						<label for="number-adults-field">Взрослые:</label>
-							<button type="button" name="minus">-</button>
+						<label for="number-adults-field">Взрослые:
+							<button class="btn-minus-plus btn-minus" type="button" name="minus">-</button>
 								<input class="adults-field" type="text" name="number-adults" id="number-adults-field" value="2" autocomplete="on" tabindex="3">
-							<button type="button" name="plus">+</button>
-						<label for="number-children-field">Дети:</label>
-							<button type="button" name="minus">-</button>
+							<button class="btn-minus-plus btn-plus" type="button" name="plus">+</button>
+						</label>
+						<label for="number-children-field">Дети:
+							<button class="btn-minus-plus btn-minus" type="button" name="minus">-</button>
 								<input class="children-field" type="text" name="number-children" id="number-children-field" value="0" autocomplete="on" tabindex="4">
-							<button type="button" name="plus">+</button>
+							<button class="btn-minus-plus btn-plus" type="button" name="plus">+</button>
+						</label>
 					</div>
 					<button class="btn btn-find" type="submit" name="find-hotel" tabindex="5">Найти</button>
 				</div>  

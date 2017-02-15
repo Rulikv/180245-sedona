@@ -26,7 +26,7 @@
                         <a href="#">Карта штата</a>
                     </li>
                     <li>
-                        <a class="active" href="#">Гостиницы</a>
+                        <a class="active">Гостиницы</a>
                     </li>
                 </ul>
             </nav>
@@ -37,28 +37,54 @@
             <form action="https://echo.htmlacademy.ru" method="get"> 
                 <div class="filter-item infrastructure">
                     <p>Инфраструктура:</p>
-		              <input type="checkbox" name="pool" id="pool-field" checked>
-			             <label for="pool-field">Бассейн</label>
-		              <input type="checkbox" name="parking" id="parking-field">
-			             <label for="parking-field">Парковка</label>
-		              <input type="checkbox" name="internet" id="internet-field">
-			             <label for="internet-field">Wi-Fi</label>
+                        <label class="filter-checkbox" for="pool-field">
+                            <input type="checkbox" name="pool" id="pool-field" checked>
+                                <span class="checkbox-indicator"></span>
+                                Бассейн
+                        </label>
+                        <label class="filter-checkbox" for="parking-field">
+                            <input type="checkbox" name="parking" id="parking-field">
+                                <span class="checkbox-indicator"></span>
+                                Парковка
+                        </label>
+                        <label class="filter-checkbox" for="internet-field">
+                            <input type="checkbox" name="internet" id="internet-field">
+                                <span class="checkbox-indicator"></span>
+                                Wi-Fi
+                        </label>
           	    </div>
                 <div class="filter-item accomodation-type">
                     <p>Тип жилья:</p>
-                    <input type="checkbox" name="hotel" id="hotel-field" checked>
-                    	<label for="hotel-field">Гостиница</label>
-                    <input type="checkbox" name="motel" id="motel-field" checked>
-                    	<label for="motel-field">Мотель</label>
-                    <input type="checkbox" name="apartments" id="apartments-field" checked>
-                    	<label for="apartments-field">Апартаменты</label>
+                        <label class="filter-checkbox" for="hotel-field">
+                            <input type="checkbox" name="hotel" id="hotel-field" checked>
+                                <span class="checkbox-indicator"></span>
+                                Гостиница
+                        </label>
+                        <label class="filter-checkbox" for="motel-field">
+                            <input type="checkbox" name="motel" id="motel-field" checked>
+                                <span class="checkbox-indicator"></span>
+                                Мотель
+                        </label>
+                        <label class="filter-checkbox" for="apartments-field">
+                            <input type="checkbox" name="apartments" id="apartments-field" checked>
+                                <span class="checkbox-indicator"></span>
+                                Апартаменты
+                        </label>
                 </div>
-                <div class="accomodation-price">
-                    <label for="day-price">Стоимость в сутки (р):</label>
-                        <input class="min-price" type="text" value="от 0">
-                        <input class="max-price" type="text" value="до 3000">
-                        <input type="range" min="0" max="3000" step="100" value="2700" id="day-price">
-                        <input class="btn btn-small" type="submit" value="Показать">
+                <div class="price-range">
+                    <div class="price-range-title">Стоимость в сутки (р):</div>
+                    <div class="price-controls">
+                        <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+                        <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+                    </div>
+                    <div class="range-controls">
+                        <div class="scale">
+                            <div class="bar"></div>
+                        </div>
+                        <div class="range-toggle range-toggle-min"></div>
+                        <div class="range-toggle range-toggle-max"></div>
+                    </div>
+                    <input class="btn btn-small" type="submit" value="Показать">
                 </div>
             </form>
         </section>

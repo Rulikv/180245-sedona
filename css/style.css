@@ -19,9 +19,8 @@ body {
 .container {
 	width: 1200px;
   	margin: 0 auto;
+  	color: #000000;
 	background-color: #ffffff;
-
-  	/*outline: 1px solid green;*/
 }
 
 .main-header .container {
@@ -74,9 +73,9 @@ body {
 
 .navigation a {
 	display: block;
-  	padding-top: 15px;
-  	padding-bottom: 15px;
-	color: #000000;
+	margin-top: 15px;
+	margin-bottom: 15px;
+  	color: #000000;
 	text-decoration: none; 
 }
 
@@ -91,6 +90,15 @@ body {
 
 .navigation a.active {
 	color: #766357;
+}
+
+.navigation a.active:hover {
+	color: #766357;
+}
+
+.navigation a.active:active {
+	color: #766357;
+	opacity: 1;
 }
 
 /*Стили index.html*/
@@ -168,6 +176,7 @@ h2 {
 .feature-name {
 	width: 400px;
 	text-align: center;
+	color: #000000;
 	background-color: #81b3d2;
 }
 
@@ -272,9 +281,9 @@ h2 {
 .food::before {
     width: 95px;
     height: 70px;
-    margin-left: -56px;
+    margin-left: -36px;
     margin-top: 2px;
-    background-position: 10px -615px;
+    background-position: -10px -654px;
 }
 
 .souvenirs::before {
@@ -282,7 +291,7 @@ h2 {
     width: 64px;
     height: 76px;
     margin-left: -32px;
-    background-position: -10px -1130px;
+    background-position: -10px -1631px;
 }
 
 .features-img-bridge {
@@ -309,6 +318,7 @@ h2 {
 .features-block {
 	width: 1200px;
 	margin: 0 auto;
+	color: #000000;
 	background-color: #eeeeee;
 }
 
@@ -352,6 +362,7 @@ h2 {
 	width: 1200px;
 	margin: 0 auto;
 	padding-top: 54px;
+	color: #000000;
 	background-color: #ffffff;
 }
 
@@ -404,6 +415,7 @@ h2 {
 	top: 291px;
 	width: 458px;
 	padding: 55px;
+	color: #000000;
 	background-color: #ffffff;	
 	box-shadow: 0 15px 7px 15px rgba(0, 1, 1, 0.15);
 }
@@ -437,40 +449,23 @@ h2 {
 	margin-bottom: 30px;
 }
 
-.guests {
-	margin-bottom: 54px;
-}
-
 .dates input {
 	width: 322px;
   	padding: 6px 12px;
 }
 
-.guests input {
-	width: 24px;
-	padding: 6px 38px;
-}
-
 .checkin-field {
 	margin-left: 21px;
-	margin-bottom: 25px;
+	margin-bottom: 27px;
 }
 
 .checkout-field {
 	margin-left: 17px;
 }
-/*
-.adults-field {
-	margin-left: 41px;
-}
-
-.children-field {
-	margin-left: 27px;
-}*/
 
 .checkin-field + .btn-calendar {
 	position: absolute;
-	top: 10px;
+	top: 7px;
 	right: 12px;
 	width: 21px;
     height: 22px;
@@ -482,7 +477,7 @@ h2 {
 
 .checkout-field + .btn-calendar {
 	position: absolute;
-	top: 76px;
+	top: 74px;
 	right: 12px;
 	width: 21px;
     height: 22px;
@@ -500,6 +495,70 @@ h2 {
 .btn-calendar::active {
 	background: transparent url("../img/sprite.png") no-repeat;
     background-position: -10px -366px;
+}
+
+.guests {
+	position: relative;
+	margin-bottom: 54px;
+}
+
+.adults-field {
+	width: 38px;
+	padding: 6px 38px;
+	margin-right: 50px;
+	margin-left: 35px;
+	padding-right: 38px;
+	padding-left: 38px;
+	text-align: center;
+}
+
+.children-field {
+	width: 38px;
+	padding: 6px 38px;
+	margin-left: 23px;
+	padding-right: 38px;
+	padding-left: 38px;
+	text-align: center;
+}
+
+.guests button[type="button"] {
+	font-size: 0;
+}
+
+.btn-minus-plus {
+    position: absolute;
+    width: 38px;
+    height: 38px;
+    border: none;
+    background: transparent url("../img/sprite.png") no-repeat;
+}
+
+.btn-minus {
+	top: 19px;
+    left: 125px;
+	background-position: -10px -1011px;
+}
+
+.btn-minus::hover {
+	background-position: -10px -1034px;
+}
+
+.btn-minus::active {
+	background-position: -10px -1057px;
+}
+
+.btn-plus {
+	top: 14px;
+    left: 200px;
+	background-position: -10px -1080px;
+}
+
+.btn-plus::hover {
+	background-position: -10px -1111px;
+}
+
+.btn-plus::active {
+	background-position: -10px -1142px;
 }
 
 .btn {
@@ -530,34 +589,6 @@ h2 {
 	background-color: #5496bd;
 }
 
-.guests button {
-	font-size: 0;
-}
-
-.plus {
-	background-position: -10px -951px;
-}
-
-.plus::hover {
-	background-position: -10px -982px;
-}
-
-.plus::active {
-	background-position: -10px -1013px;
-}
-
-.minus {
-	background-position: -10px -882px;
-}
-
-.minus::hover {
-	background-position: -10px -905px;
-}
-
-.minus::active {
-	background-position: -10px -928px;
-}
-
 .location { 
 	width: 1200px;
 	margin: 0 auto;
@@ -571,6 +602,7 @@ footer {
 	z-index: 1;
 	width: 1200px;
 	margin: 0 auto;
+	color: #000000;
 	background-color: #f9fbf6;
 	opacity: 0.9;
 }
@@ -620,7 +652,7 @@ footer {
 }
 
 .social-btn-twit {
-	background-position: 5px -1320px;
+	background-position: 5px -4676px;
 }
 
 .social-btn-fb {
@@ -628,22 +660,19 @@ footer {
 }
 
 .social-btn-yt {
-    background-position: 3px -1357px;
+    background-position: 3px -4748px;
 }
 
-/*Доделать чтобы изображение становилось прозрачным*/
-
 .social-btn-twit:active {
-	background-position: 5px -1320px;
-	color: rgba(255, 255, 255, 0.3);
+	background-position: 5px -4711px;
 }
 
 .social-btn-fb:active {
-	background-position: 7px -563px;
+	background-position: 7px -602px;
 }
 
 .social-btn-yt:active {
-    background-position: 3px -1357px;
+    background-position: 3px -4784px;
 }
 
 .developer {
@@ -673,15 +702,15 @@ footer {
 	height: 39px;
 	font-size: 0;
 	background: transparent url("../img/sprite.png") no-repeat;
-    background-position: -10px -705px;
+    background-position: -10px -744px;
 }
 
 .developer a:hover {
-	background-position: -10px -764px;
+	background-position: -10px -803px;
 }
 
 .developer a:active {
-	background-position: -10px -823px;
+	background-position: -10px -862px;
 }
 
 /*Стили для hotels.html*/
@@ -707,14 +736,6 @@ footer {
 	padding-bottom: 6px;
 }
 
-.accomodation-price {
-	float: right;
-	width: 328px;
-	margin-right: 72px;
-	padding-top: 29px;
-	padding-bottom: 6 px;
-}
-
 .filter p {
 	margin-bottom: 26px;
 	font-weight: bold;
@@ -724,11 +745,12 @@ footer {
 	color: #ffffff;
 }
 
-.filter-item {
-	position: relative;
+.filter-item input[type="checkbox"] {
+	display: none;
 }
 
-.filter-item label {
+.filter-checkbox {
+	position: relative;
 	display: block;
 	margin-bottom: 25px;
 	padding-left: 37px;
@@ -740,20 +762,7 @@ footer {
 	cursor: pointer;
 }
 
-.accomodation-price label {
-	font-weight: bold;
-	font-size: 16px;
-	line-height: 21px;
-	font-family: "PT Sans", "Helvetica", "Arial", sans-serif;
-	color: #ffffff;
-}
-
-.filter input[type="checkbox"] {
-	display: none;
-}
-
-.filter-item label::before {
-	content: "";
+.filter-checkbox input[type="checkbox"]+.checkbox-indicator {
 	position: absolute;
 	left: -1px;
 	width: 22px;
@@ -761,6 +770,114 @@ footer {
     margin-top: -2px;
 	background: transparent url("../img/sprite.png") no-repeat;
     background-position: -10px -408px;
+}
+
+.filter-checkbox input[type="checkbox"]:checked +.checkbox-indicator {
+	width: 26px;
+    height: 22px;
+	background-position: -10px -492px;
+}
+
+.price-range {
+	float: right;
+	width: 328px;
+	margin-right: 72px;
+	padding-top: 29px;
+	padding-bottom: 6 px;
+	color: #ffffff;
+  	text-transform: uppercase;
+}
+
+.price-range-title {
+  	margin-bottom: 9px;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 21px;
+	font-family: "PT Sans", "Helvetica", "Arial", sans-serif;
+	color: #ffffff;
+}
+
+.price-controls {
+  	position: relative;
+  	height: 36px;
+  	margin-bottom: 20px;
+  	font-size: 0;
+  	border: 2px solid #ffffff;
+  	border-radius: 2px;
+}
+
+.price-controls::after {
+  	content: "";
+  	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	width: 2px;
+  	height: 22px;
+  	background: #ffffff;
+  	transform: translate(-50%, -50%);
+}
+
+.price-controls label {
+  	display: inline-block;
+  	font-size: 14px;
+  	line-height: 38px;
+  	vertical-align: top;
+  	cursor: pointer;
+}
+
+.price-controls .min-price,
+.price-controls .max-price {
+  	width: 90px;
+  	padding-left: 65px;
+}
+
+.price-controls input {
+ 	width: 50px;
+  	margin: 0;
+  	color: inherit;
+  	font: inherit;
+  	background: none;
+  	border: none;
+}
+
+.range-controls {
+  	position: relative;
+  	margin-bottom: 32px;
+}
+
+.range-controls .scale {
+  	height: 2px;
+  	background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+  	width: 80%;
+  	height: 2px;
+  	background: #ffffff;
+}
+
+.range-toggle {
+  	position: absolute;
+  	top: -9px;
+  	width: 4px;
+  	height: 4px;
+  	background: #ababab;
+  	border: 8px solid #ffffff;
+  	border-radius: 50%;
+  	box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  	cursor: pointer;
+}
+
+.range-toggle:hover {
+  	background: #1c4f80;
+}
+
+.range-toggle-min {
+  	left: 0;
+}
+
+.range-toggle-max {
+  	left: 80%;
 }
 
 .btn-small {
@@ -772,9 +889,11 @@ footer {
 	line-height: 21px;
 	text-align: center;
 	color: #ffffff;
+	text-transform: uppercase;
 	background-color: transparent;
-	border: 3px solid #ffffff;
+	border: 2px solid #ffffff;
 	border-radius: 2px;
+	cursor: pointer;
 }
 
 .btn-small:hover {
@@ -789,16 +908,11 @@ footer {
 .accomodation-found {
 	width: 1056px;
 	margin: 0 auto;
-	border-bottom: 1px solid #e5e5e5;
-
-	/*outline: 1px solid red;*/
 }
 
 .accomodation-number {
 	float: left;
 	width: 160px;
-
-	/*outline: 1px solid orange;*/
 }
 
 .accomodation-number p {
@@ -813,16 +927,12 @@ footer {
 .sorting {
 	float: right;
 	width: 895px;
-	
-	/*outline: 1px solid orange;*/
 }
 
 .sorting-type {
 	position: relative;
 	float: left;
 	width: 569px;
-	
-	/*outline: 1px solid blue;*/
 }
 
 .sorting-type p {
@@ -840,7 +950,7 @@ footer {
 	left: 77px;
 }
 
-.sorting-type li { /*СДЕЛАТЬ ССЫЛКАМИ*/
+.sorting-type li {
 	display: inline-block;
 	margin-right: 30px;
 	font-weight: normal;
@@ -889,9 +999,6 @@ footer {
 	width: 38px;
 	margin-top: 30px;
 	font-size: 0;
-	
-	/*background-color: #b2cad5;
-	outline: 1px solid blue;*/
 }
 
 .arrow {
@@ -933,18 +1040,11 @@ footer {
 .accomodation-block {
 	width: 1056px;
 	margin: 0 auto;
-
-	/*background-color: #f4d1d1;
-	outline: 1px solid red;*/
 }
 
 .accomodation-item {
 	width: 1056px;
 	padding: 28px 0 24.5px 0;
-	border-bottom: 1px solid #e5e5e5;
-
-	/*background-color: #fefccf;
-	outline: 1px solid orange;*/
 }
 
 .accomodation-item a {
@@ -962,27 +1062,18 @@ footer {
 .accomodation-info {
 	float: left;
 	width: 528px;
-		
-	/*background-color: #b2cad5;
-	outline: 1px solid blue;*/
 }
 
 .accomodation-img {
 	float: left;
 	width: 160px;
 	margin-top: 2px;
-
-/*	background-color: #bbbbbb;
-	outline: 1px solid white;*/
 }
 
 .accomodation-booking {
 	position: relative;
 	float: right;
 	width: 367px;
-
-	/*background-color: #bbbbbb;
-	outline: 1px solid white;*/
 }
 
 .accomodation-booking h3 {
@@ -1066,9 +1157,6 @@ footer {
 	margin-top: 53px;
 	margin-left: 60px;
 	padding-left: 20px;
-
-	background-color: #bbbbbb;
-	outline: 1px solid white;
 }
 
 .accomodation-rate p {
@@ -1094,26 +1182,20 @@ footer {
 .rate-level-4::before {
 	width: 89px;
     height: 17px;
-    background-position: -10px -1300px;
+    background-position: -10px -4657px;
 }	
 
 .rate-level-3::before {
 	width: 65px;
     height: 17px;
-    background-position: -10px -1263px;
+    background-position: -10px -4620px;
 }
-
 
 .rate-level-2::before {
 	width: 42px;
     height: 17px;
-    background-position: -10px -1226px;
+    background-position: -10px -4583px;
 }
-
-
-
-
-
 
 
 /*Спрайты*/

@@ -1370,247 +1370,247 @@ footer {
 /*Спрайты*/
 
 .sprite {
-    background-image: url(spritesheet.png);
-    background-repeat: no-repeat;
-    display: block;
+	background-image: url(spritesheet.png);
+	background-repeat: no-repeat;
+	display: block;
 }
 
 .sprite-accomodation-icon {
-    width: 75px;
-    height: 72px;
-    background-position: -10px -10px;
+	width: 75px;
+	height: 72px;
+	background-position: -10px -10px;
 }
 
 .sprite-arrow-down-black {
-    width: 11px;
-    height: 10px;
-    background-position: -10px -102px;
+	width: 11px;
+	height: 10px;
+	background-position: -10px -102px;
 }
 
 .sprite-arrow-down-blue {
-    width: 11px;
-    height: 10px;
-    background-position: -10px -132px;
+	width: 11px;
+	height: 10px;
+	background-position: -10px -132px;
 }
 
 .sprite-arrow-down-grey {
-    width: 11px;
-    height: 10px;
-    background-position: -10px -162px;
+	width: 11px;
+	height: 10px;
+	background-position: -10px -162px;
 }
 
 .sprite-arrow-up-black {
-    width: 11px;
-    height: 10px;
-    background-position: -10px -192px;
+	width: 11px;
+	height: 10px;
+	background-position: -10px -192px;
 }
 
 .sprite-arrow-up-blue {
-    width: 11px;
-    height: 10px;
-    background-position: -10px -222px;
+	width: 11px;
+	height: 10px;
+	background-position: -10px -222px;
 }
 
 .sprite-arrow-up-grey {
-    width: 11px;
-    height: 10px;
-    background-position: -10px -252px;
+	width: 11px;
+	height: 10px;
+	background-position: -10px -252px;
 }
 
 .sprite-calender {
-    width: 21px;
-    height: 22px;
-    background-position: -10px -282px;
+	width: 21px;
+	height: 22px;
+	background-position: -10px -282px;
 }
 
 .sprite-calender-pointed {
-    width: 21px;
-    height: 22px;
-    background-position: -10px -324px;
+	width: 21px;
+	height: 22px;
+	background-position: -10px -324px;
 }
 
 .sprite-calender-pressed {
-    width: 21px;
-    height: 22px;
-    background-position: -10px -366px;
+	width: 21px;
+	height: 22px;
+	background-position: -10px -366px;
 }
 
 .sprite-checkbox {
-    width: 22px;
-    height: 22px;
-    background-position: -10px -408px;
+	width: 22px;
+	height: 22px;
+	background-position: -10px -408px;
 }
 
 .sprite-checkbox-blocked {
-    width: 22px;
-    height: 22px;
-    background-position: -10px -450px;
+	width: 22px;
+	height: 22px;
+	background-position: -10px -450px;
 }
 
 .sprite-checkbox-checked {
-    width: 26px;
-    height: 22px;
-    background-position: -10px -492px;
+	width: 26px;
+	height: 22px;
+	background-position: -10px -492px;
 }
 
 .sprite-checkbox-checked-blocked {
-    width: 26px;
-    height: 22px;
-    background-position: -10px -534px;
+	width: 26px;
+	height: 22px;
+	background-position: -10px -534px;
 }
 
 .sprite-fb-icon {
-    width: 10px;
-    height: 19px;
-    background-position: -10px -576px;
+	width: 10px;
+	height: 19px;
+	background-position: -10px -576px;
 }
 
 .sprite-fb-pressed {
-    width: 10px;
-    height: 19px;
-    background-position: -10px -615px;
+	width: 10px;
+	height: 19px;
+	background-position: -10px -615px;
 }
 
 .sprite-food-icon {
-    width: 74px;
-    height: 70px;
-    background-position: -10px -654px;
+	width: 74px;
+	height: 70px;
+	background-position: -10px -654px;
 }
 
 .sprite-ha-logo {
-    width: 113px;
-    height: 39px;
-    background-position: -10px -744px;
+	width: 113px;
+	height: 39px;
+	background-position: -10px -744px;
 }
 
 .sprite-ha-logo-pointed {
-    width: 113px;
-    height: 39px;
-    background-position: -10px -803px;
+	width: 113px;
+	height: 39px;
+	background-position: -10px -803px;
 }
 
 .sprite-ha-logo-pressed {
-    width: 113px;
-    height: 39px;
-    background-position: -10px -862px;
+	width: 113px;
+	height: 39px;
+	background-position: -10px -862px;
 }
 
 .sprite-logo {
-    width: 138px;
-    height: 70px;
-    background-position: -10px -921px;
+	width: 138px;
+	height: 70px;
+	background-position: -10px -921px;
 }
 
 .sprite-minus {
-    width: 12px;
-    height: 3px;
-    background-position: -10px -1011px;
+	width: 12px;
+	height: 3px;
+	background-position: -10px -1011px;
 }
 
 .sprite-minus-pointed {
-    width: 12px;
-    height: 3px;
-    background-position: -10px -1034px;
+	width: 12px;
+	height: 3px;
+	background-position: -10px -1034px;
 }
 
 .sprite-minus-pressed {
-    width: 12px;
-    height: 3px;
-    background-position: -10px -1057px;
+	width: 12px;
+	height: 3px;
+	background-position: -10px -1057px;
 }
 
 .sprite-plus {
-    width: 11px;
-    height: 11px;
-    background-position: -10px -1080px;
+	width: 11px;
+	height: 11px;
+	background-position: -10px -1080px;
 }
 
 .sprite-plus-pointed {
-    width: 11px;
-    height: 11px;
-    background-position: -10px -1111px;
+	width: 11px;
+	height: 11px;
+	background-position: -10px -1111px;
 }
 
 .sprite-plus-pressed {
-    width: 11px;
-    height: 11px;
-    background-position: -10px -1142px;
+	width: 11px;
+	height: 11px;
+	background-position: -10px -1142px;
 }
 
 .sprite-range {
-    width: 21px;
-    height: 23px;
-    background-position: -10px -1173px;
+	width: 21px;
+	height: 23px;
+	background-position: -10px -1173px;
 }
 
 .sprite-range-pointed {
-    width: 21px;
-    height: 23px;
-    background-position: -10px -1216px;
+	width: 21px;
+	height: 23px;
+	background-position: -10px -1216px;
 }
 
 .sprite-slogans {
-    width: 458px;
-    height: 352px;
-    background-position: -10px -1259px;
+	width: 458px;
+	height: 352px;
+	background-position: -10px -1259px;
 }
 
 .sprite-souvenirs-icon {
-    width: 64px;
-    height: 76px;
-    background-position: -10px -1631px;
+	width: 64px;
+	height: 76px;
+	background-position: -10px -1631px;
 }
 
 .sprite-sprite {
-    width: 133px;
-    height: 1398px;
-    background-position: -10px -1727px;
+	width: 133px;
+	height: 1398px;
+	background-position: -10px -1727px;
 }
 
 .sprite-sprite1 {
-    width: 153px;
-    height: 1418px;
-    background-position: -10px -3145px;
+	width: 153px;
+	height: 1418px;
+	background-position: -10px -3145px;
 }
 
 .sprite-stars-2 {
-    width: 42px;
-    height: 17px;
-    background-position: -10px -4583px;
+	width: 42px;
+	height: 17px;
+	background-position: -10px -4583px;
 }
 
 .sprite-stars-3 {
-    width: 65px;
-    height: 17px;
-    background-position: -10px -4620px;
+	width: 65px;
+	height: 17px;
+	background-position: -10px -4620px;
 }
 
 .sprite-stars-4 {
-    width: 89px;
-    height: 17px;
-    background-position: -10px -4657px;
+	width: 89px;
+	height: 17px;
+	background-position: -10px -4657px;
 }
 
 .sprite-twitter-icon {
-    width: 17px;
-    height: 15px;
-    background-position: -10px -4694px;
+	width: 17px;
+	height: 15px;
+	background-position: -10px -4694px;
 }
 
 .sprite-twitter-pressed {
-    width: 17px;
-    height: 15px;
-    background-position: -10px -4729px;
+	width: 17px;
+	height: 15px;
+	background-position: -10px -4729px;
 }
 
 .sprite-youtube-icon {
-    width: 20px;
-    height: 16px;
-    background-position: -10px -4764px;
+	width: 20px;
+	height: 16px;
+	background-position: -10px -4764px;
 }
 
 .sprite-youtube-pressed {
-    width: 20px;
-    height: 16px;
-    background-position: -10px -4800px;
+	width: 20px;
+	height: 16px;
+	background-position: -10px -4800px;
 }

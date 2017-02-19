@@ -99,16 +99,16 @@
 					<h3>Заинтересовались?</h3>
 					<p>Укажите, предполагаемые даты поездки,
 						<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+						<a class="hotel-search-form" href="#">Поиск гостиницы в Седоне</a>
 				</div>
-				<form action="https://echo.htmlacademy.ru" method="get">
-					<a class="hotel-search-form" href="#">Поиск гостиницы в Седоне</a>
+				<form class="popup-form" action="https://echo.htmlacademy.ru" method="get">
 					<div class="modal">
 						<div class="formgroup dates">
 							<label for="checkin-date-field">Дата заезда:</label>
-								<input class="checkin-field" type="text" name="checkin-date" id="checkin-date-field" value="24 Апреля 2017" required autocomplete="on" tabindex="1">
+								<input class="checkin-field" type="text" name="checkin-date" id="checkin-date-field" value="24 Апреля 2017" autocomplete="on" tabindex="1">
 								<button class="btn-calendar" type="button" title="Выбрать дату">Выбрать дату</button>
 							<label for="checkout-date-field">Дата выезда:</label>
-								<input class="checkout-field" type="text" name="checkout-date" id="checkout-date-field" value="4 июля 2017" required autocomplete="on" tabindex="2">
+								<input class="checkout-field" type="text" name="checkout-date" id="checkout-date-field" value="4 июля 2017" autocomplete="on" tabindex="2">
 								<button class="btn-calendar" type="button" title="Выбрать дату"></button>
 						</div>
 						<div class="formgroup guests">
@@ -129,8 +129,8 @@
 					</div>
 				</form>
 			</section>
-			<section class="location">
-				<img src="img/map.jpg" width="1200" height="593" alt="Карта Седоны">
+			<section class="location" id="yandex-map">
+				<!--<img src="img/map.jpg" width="1200" height="593" alt="Карта Седоны">-->
 			</section>
 		</main>
 		<footer class="container clearfix">
@@ -148,5 +148,7 @@
 			</div>
 		</footer>
 	</div>
+	<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=SC-KyOoTIuFDN6WBnbxetXbtluzkzKQD&amp;width=100%25&amp;height=593&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=false&id=yandex-map"></script>
+	<script src="js/script.min.js"></script>
 </body>
 </html>
